@@ -1,5 +1,6 @@
 main {
   display: flex;
+  padding: 0 5%;
 }
 
 body {
@@ -102,7 +103,7 @@ div h2 {
   font-size: 1.4rem;
 }
 
-div ul {
+div.professional-experiences ul {
   padding: 0 40px 0 32px;
   font-size: 0.9rem;
   font-weight: 300;
@@ -132,11 +133,11 @@ article div.home h1 {
 }
 
 article div.cards {
-  border: 1px solid red;
   width: min(28rem, 100%);
   height: 12rem;
   margin: 1.5rem 1.5rem 1.5rem 0;
   padding: 1.5rem 2.5rem 0 2.5rem;
+  box-sizing: border-box;
 }
 
 .cards h1 {
@@ -157,7 +158,22 @@ article div.cards {
   margin-right: 1rem;
 }
 
-.additional-information img {
+ul.stars-branches {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  width: min(8rem, 100%);
+  height: 1.2rem;
+}
+
+ul li img {
   width: 1.2rem;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  ul.stars-branches {
+    margin-top: 0;
+  }
 }

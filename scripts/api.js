@@ -37,11 +37,12 @@ const createCard = (data) => {
             <span>${item.name.toLowerCase()}</span></h1>
             <p class="card-description">${item.description}</p>
   
-            <div class="additional-information"> 
-            <p class="watchers-forks-information"><img src="../assets/assets/star.svg" </img>
-            ${item.watchers}</p> 
-            </div>
-            <p>  ${item.forks} ${item.language}</p>
+            <ul type="none" class="stars-branches"> 
+            <li><img src="../assets/assets/star.svg"></img></li>
+            <li>${item.watchers}</li>
+            <li><img src="../assets/assets/git-branch.svg"></img></li>
+            <li>${item.forks}</li>
+            </ul>
         </a>`;
 
     article.appendChild(createACard);
