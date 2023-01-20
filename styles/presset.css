@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+}
+:root {
+    --body-bg-color: #22212C;
+        --text-color: #837E9F;
+        --bg-cards: #302F3D;
+        --bg-techs: #CB92B1;
+}
+
+html {
+    font-size: 81.25%;
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    html {
+
+        font-size: 87.5%;
+    }
+}
